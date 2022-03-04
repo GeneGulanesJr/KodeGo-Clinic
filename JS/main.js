@@ -1,20 +1,17 @@
-let btnSubmit= document.getElementById("btnSubmit");
+let btnSubmit = document.getElementById("btnSubmit");
 
 
-
-function enable(){
+function enable() {
     document.getElementById("medicationInput").disabled = false;
 }
 
 
-
-function disable(){
+function disable() {
     document.getElementById("medicationInput").disabled = true;
 }
 
 
-
-btnSubmit.addEventListener('click',(e)=>{
+btnSubmit.addEventListener('click', (e) => {
     e.preventDefault()
 
     let FirstName = document.querySelector('#FirstName').value;
@@ -34,59 +31,38 @@ btnSubmit.addEventListener('click',(e)=>{
     console.log(CurrentSymptomsValues);
 
 
-
-
-
-
 //Checkbox
-    let medicalHistory =[];
-    let D1 =   document.querySelector('#medicalHistory-0');
-    let D2 =   document.querySelector('#medicalHistory-1');
-    let D3 =   document.querySelector('#medicalHistory-2');
-    let D4 =   document.querySelector('#medicalHistory-3');
-    let D5 =   document.querySelector('#medicalHistory-4');
-    let D6 =   document.querySelector('#medicalHistory-5 ');
-    let D7 =   document.querySelector('#medicalHistory-6 ');
+    let medicalHistory = [];
+    let D1 = document.querySelector('#medicalHistory-0');
+    let D2 = document.querySelector('#medicalHistory-1');
+    let D3 = document.querySelector('#medicalHistory-2');
+    let D4 = document.querySelector('#medicalHistory-3');
+    let D5 = document.querySelector('#medicalHistory-4');
+    let D6 = document.querySelector('#medicalHistory-5 ');
+    let D7 = document.querySelector('#medicalHistory-6 ');
 
-    if(D1.checked){
+    if (D1.checked) {
         medicalHistory.push(D1.value);
     }
-    if(D2.checked){
+    if (D2.checked) {
         medicalHistory.push(D2.value);
     }
-    if(D3.checked){
+    if (D3.checked) {
         medicalHistory.push(D3.value);
     }
-    if(D4.checked){
+    if (D4.checked) {
         medicalHistory.push(D4.value);
     }
-    if(D5.checked){
+    if (D5.checked) {
         medicalHistory.push(D5.value);
     }
-    if(D6.checked){
+    if (D6.checked) {
         medicalHistory.push(D6.value);
     }
-    if(D7.checked){
+    if (D7.checked) {
         medicalHistory.push(D7.value);
     }
     console.log(medicalHistory);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     //store RadioMed in a object
@@ -98,18 +74,18 @@ btnSubmit.addEventListener('click',(e)=>{
         address: address,
         Birthday: Birthday,
         ConNumber: ConNumber,
-        Gender:Gender,
-        Medication:Medication,
-        MedicalHistory:medicalHistory,
-        MedicationDetails:MedicationDetails,
-        CurrentSymptoms:CurrentSymptomsValues
+        Gender: Gender,
+        Medication: Medication,
+        MedicalHistory: medicalHistory,
+        MedicationDetails: MedicationDetails,
+        CurrentSymptoms: CurrentSymptomsValues
 
-        }
+    }
 
 
-        //store PatientRecords in local storage
-        localStorage.setItem('PatientRecords',JSON.stringify(PatientRecords));
-
+    //store PatientRecords in local storage
+    localStorage.setItem('PatientRecords', JSON.stringify(PatientRecords));
 
 
 })
+
