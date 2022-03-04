@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Fields Data</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<form class="form-horizontal" id="patientForm" name="patientForm">
+
+
+    <!-- Form Name -->
+
+    <div class="container">
+        <div class="row col-sm-12">
+            <div class="col-sm">
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="FirstName">FirstName</label>
+                    <div class="col-md-12">
+                        <input id="FirstName" name="FirstName" type="text" placeholder="FirstName"
+                               class="form-control input-md" required="">
+                        <span class="help-block">help</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="MiddleName">MiddleName</label>
+                    <div class="col-md-12">
+                        <input id="MiddleName" name="MiddleName" type="text" placeholder="MiddleName"
+                               class="form-control input-md" required="">
+                        <span class="help-block">help</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <!-- Password input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="LastName">LastName</label>
+                    <div class="col-md-12">
+                        <input id="LastName" name="LastName" type="text" placeholder="LastName"
+                               class="form-control input-md" required="">
+                        <span class="help-block">help</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row col-sm-12">
+            <div class="col-sm">
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="address">Address</label>
+                    <div class="col-md-12">
+                        <input id="address" name="address" type="text" placeholder="Address"
+                               class="form-control input-md" required="">
+                        <span class="help-block">help</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="Birthday">Birthday</label>
+                        <div class="col-md-12">
+                            <input id="Birthday" name="Birthday" type="date" placeholder="Birthday"
+                                   class="form-control input-md" required="">
+                            <span class="help-block">help</span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label class="col-md-6 control-label" for="ConNumber">Contact Number</label>
+                        <div class="col-md-12">
+                            <input id="ConNumber" name="ConNumber" type="number" placeholder="Contact Number"
+                                   class="form-control input-md" required="">
+                            <span class="help-block">help</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="gender">Gender</label>
+                        <div class="col-md-4">
+                            <div class="radio">
+                                <label for="gender-0">
+                                    <input type="radio" name="gender" id="gender-0" value="Male" checked>
+                                    Male
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="gender-1">
+                                    <input type="radio" name="gender" id="gender-1" value="Female">
+                                    Female
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <label class="col-md-12 control-label" for="medicalHistory">Medical History</label>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+
+                        <div class="col-md-6">
+                            <div class="checkbox">
+                                <label for="medicalHistory-0">
+                                    <input type="checkbox" name="medicalHistory" id="medicalHistory-0" value="Asthma" class="checkbox">
+                                    Asthma
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="medicalHistory-1">
+                                    <input type="checkbox" name="medicalHistory" id="medicalHistory-1" value="Cancer"  class="checkbox">
+                                    Cancer
+                                </label>
+                            </div>
+                            <div class="checkbox ">
+                                <label for="medicalHistory-2">
+                                    <input type="checkbox" name="medicalHistory" id="medicalHistory-2" value="Cardiac Disease"  class="checkbox">
+                                    Cardiac Disease
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="medicalHistory-3">
+                                    <input type="checkbox" name="medicalHistory" id="medicalHistory-3" value="Diabetes"  class="checkbox">
+                                    Diabetes
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+
+                        <div class="col-md-8">
+                            <div class="checkbox">
+                                <label for="medicalHistory-0">
+                                    <input type="checkbox" name="medicalHistory" id="medicalHistory-4" value="Hypertension"  class="checkbox">
+                                    Hypertension
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="medicalHistory-1">
+                                    <input type="checkbox" name="medicalHistory" id="medicalHistory-5" value="Psychiatric Disorder"  class="checkbox">
+                                    Psychiatric Disorder
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="medicalHistory-2">
+                                    <input type="checkbox" name="medicalHistory" id="medicalHistory-6" value="Epilepsy"  class="checkbox">
+                                    Epilepsy
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="medicalHistory-3">
+                                    <input type="checkbox" name="medicalHistory" id="medicalHistory-7" value="Others"  class="checkbox">
+                                    Others
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="row">
+                <div class="col">
+                    <label class="col-md-4 control-label" for="CurrentSymptoms">Current Symptoms</label>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+
+                        <div class="col-md-8">
+                            <select id="CurrentSymptoms" name="CurrentSymptoms" class="form-control" multiple="multiple">
+                                <option value="Chest Pain">Chest Pain</option>
+                                <option value="Respiratory">Respiratory</option>
+                                <option value="Hematological">Hematological</option>
+                                <option value="Lymphatic">Lymphatic</option>
+                                <option value="Neurological">Neurological</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label class="col-md-12 control-label" for="medication">Are you currently taking medication?</label>
+                        <div class="col-md-4">
+                            <div class="radio">
+                                <label for="medication-0">
+                                    <input type="radio" name="medication" id="medication-0" value="true" checked="checked" onchange="enable()">
+                                    Yes
+                                </label>
+                            </div>
+
+                            <div class="radio">
+                                <label for="medication-1">
+                                    <input type="radio" name="medication" id="medication-1" value="false" onchange="disable()">
+                                    No
+                                </label>
+
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-12 control-label" for="medicationInput"></label>
+                            <div class="col-md-12">
+                                <input id="medicationInput" name="medicationInput" type="text" placeholder="placeholder" class="form-control input-md">
+                                <span class="help-block">help</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+                    <div class="form-group">
+
+                        <div class="col-md-12">
+                            <button id="btnSubmit" name="btnSubmit" class="btn btn-success" type="submit">Submit</button>
+                            <button id="button2id" name="button2id" class="btn btn-danger" type="reset">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+</form>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="JS/main.js"></script>
+
+</body>
+</html>
